@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--scroll-thumb-color: theme("colors.zinc.600");
+	--scroll-track-color: theme("colors.zinc.700");
+	--scroll-thumb-hover-clr: theme("colors.zinc.500");
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+	height: 15px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 100vh;
+	background: var(--scroll-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--scroll-thumb-color);
+	border-radius: 100vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--scroll-thumb-hover-clr);
+}
