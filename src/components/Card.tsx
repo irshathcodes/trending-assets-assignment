@@ -18,12 +18,12 @@ export default function Card({
 	return (
 		<section className="relative h-[400px] w-[292px]">
 			<div
-				className={`mx-auto block w-fit rounded-full bg-gray-500/10 p-6  bg-blend-lighten backdrop-blur-sm`}
+				className={`absolute left-0 right-0 z-10 mx-auto block w-fit rounded-full bg-gray-500/10 p-6 backdrop-blur-sm`}
 			>
 				<CardIcon />
 			</div>
 
-			<div className="absolute bottom-0  h-[350px] w-full rounded-2xl bg-card-shape bg-cover bg-top bg-no-repeat px-6 py-4 text-center">
+			<div className="inner-card absolute bottom-0 h-[350px] w-full rounded-2xl border border-zinc-600/20 bg-card px-6 py-4 text-center backdrop-blur-sm">
 				<div className="mt-14 text-center text-sm capitalize">
 					<h1 className="mb-3 font-semibold text-slate-500">{name}</h1>
 					<div className="relative flex w-full items-center justify-center rounded-full border border-zinc-600/20 bg-primary py-2 shadow-lg">

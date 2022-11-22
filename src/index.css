@@ -26,3 +26,17 @@
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--scroll-thumb-hover-clr);
 }
+
+.inner-card::before {
+	content: "";
+	position: absolute;
+	top: -42px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 120px;
+	height: 100px;
+	display: block;
+	border-radius: 100%;
+	background: theme("colors.primary");
+}
